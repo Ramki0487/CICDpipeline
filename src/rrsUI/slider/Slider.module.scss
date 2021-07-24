@@ -1,0 +1,85 @@
+@import "@Assets/styles/Colors.scss";
+@import '@Assets/styles/Mixins.scss';
+
+.slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    &-inner {
+      transition: none;
+    }
+  }
+
+  &-inner {
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    will-change: transform, transition;
+  }
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    &-item {
+      transition: none;
+    }
+  }
+
+  &-item {
+    transition: visibility 0.3s ease;
+    visibility: hidden;
+    padding-right: 15px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &-visible {
+      visibility: visible;
+    }
+
+    a {
+      width: 100%;
+    }
+  }
+
+  &-arrow {
+    &-left {
+      @include arrow-button-circle('left') {
+        left: 10px;
+      }
+    }
+
+    &-right {
+      @include arrow-button-circle('right') {
+        right: 10px;
+      }
+    }
+
+    &-left,
+    &-right {
+      position: absolute;
+      background: $white;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+
+      &::before {
+        &:hover,
+        &:focus-visible {
+          border-color: $white;
+        }
+      }
+
+      &:hover,
+      &:focus-visible {
+        background-color: $RR-SkyBlue;
+        border-color: $white;
+
+        &::before {
+          border-color: $white;
+        }
+      }
+    }
+  }
+}

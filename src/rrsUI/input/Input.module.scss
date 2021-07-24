@@ -1,0 +1,60 @@
+@import '@Assets/styles/Colors.scss';
+
+.textbox {
+  vertical-align: middle;
+  outline: 0;
+  width: 100%;
+  position: relative;
+
+  label {
+    width: 100%;
+  }
+
+  &::placeholder:focus {
+    color: transparent;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &-label {
+      transition: none;
+    }
+  }
+
+  &-label {
+    cursor: text;
+    user-select: none;
+    font-weight: 600;
+    color: $warm-gray;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    transition: all 0.2s ease-in-out;
+
+    &-active {
+      z-index: 1;
+      top: 5px;
+      font-size: 12px;
+    }
+  }
+
+  &-input {
+    outline: none;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid $very-light-gray;
+    border-radius: 3px;
+
+    &-active {
+      padding: 25px 15px 5px 15px;
+
+      &:focus {
+        position: relative;
+
+        & + .textbox-label {
+          top: 5px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import '@Assets/styles/Colors.scss';
+
+.filter {
+  &-title {
+    width: 100%;
+    font-weight: 700;
+
+    span {
+      font-weight: unset;
+    }
+  }
+
+  &-button {
+    background: $RR-IceBlue;
+    margin-top: 10px;
+    color: $RR-Navy;
+    border-radius: 3px;
+    max-width: 172px;
+    min-height: 35px;
+
+    &:hover,
+    &:focus {
+      background: $RR-IceBlue;
+    }
+  }
+
+  &-icon {
+    margin-right: 6px;
+  }
+
+  &-slideout {
+    overflow-y: auto;
+  }
+
+  &-menu {
+    &-label {
+      border-bottom: 1px solid $warm-medium-gray;
+      margin: 9px;
+      padding-bottom: 16px;
+    }
+
+    &-value {
+      color: $asphalt;
+    }
+  }
+
+  &-apply {
+    background: $RR-Navy;
+    padding: 20px 10px;
+    bottom: 0;
+    color: $white;
+  }
+
+  &-tag {
+    background-color: $RR-SkyBlue;
+    padding: 20px 10px;
+  }
+}

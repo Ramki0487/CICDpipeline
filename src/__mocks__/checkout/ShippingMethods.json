@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "VIP Standard Shipping",
+    "description": "Garented delivery by friday eve",
+    "shippingCost": "FREE",
+    "status": "active"
+  },
+  {
+    "id": "2",
+    "name": "Upgraded Shipping",
+    "description": "Est arrival by moinday eve, march 10",
+    "shippingCost": "FREE",
+    "status": "inactive"
+  },
+  {
+    "id": "3",
+    "name": "Expidited Shipping",
+    "description": "Est.arrival by moinday eve, march 3",
+    "shippingCost": "FREE",
+    "status": "inactive"
+  }
+]

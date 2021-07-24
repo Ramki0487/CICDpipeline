@@ -1,0 +1,94 @@
+@import '@Assets/styles/Colors.scss';
+
+@media (prefers-reduced-motion: reduce) {
+  .toggle-switch {
+    transition: none;
+  }
+}
+
+.toggle-switch {
+  border: 1px solid $black;
+  border-radius: 25px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 65px;
+  height: 25px;
+  transition: all 0.2s ease-in 0s;
+  cursor: pointer;
+
+  @media (prefers-reduced-motion: reduce) {
+    .toggle-button {
+      transition: none;
+    }
+  }
+
+  .toggle-button {
+    content: '';
+    border-radius: 1em;
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    margin-left: -2px;
+    z-index: 2;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .toggle-text {
+      transition: none;
+    }
+  }
+
+  .toggle-text {
+    font-size: 14px;
+    user-select: none;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+
+    &.active {
+      position: absolute;
+      color: $asphalt;
+      visibility: visible;
+      margin-left: 7px;
+    }
+
+    &.inactive {
+      color: $warm-gray;
+      visibility: visible;
+    }
+  }
+
+  &.active {
+    background-color: $RR-SkyBlue;
+
+    @media (prefers-reduced-motion: reduce) {
+      .toggle-button {
+        transition: none;
+      }
+    }
+
+    .toggle-button {
+      background-color: $RR-Navy;
+      transform: translateX(37px);
+      transition: all 0.2s ease-in 0s;
+    }
+  }
+
+  &.inactive {
+    @media (prefers-reduced-motion: reduce) {
+      .toggle-button {
+        transition: none;
+      }
+    }
+
+    .toggle-button {
+      background-color: $warm-gray;
+      transition: all 0.2s ease-in 0s;
+    }
+  }
+
+  span {
+    align-self: center;
+    margin: auto;
+  }
+}

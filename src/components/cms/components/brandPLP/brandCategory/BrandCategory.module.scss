@@ -1,0 +1,90 @@
+@import '@Assets/styles/Colors.scss';
+@import '@Assets/styles/Mixins.scss';
+
+.brand-category {
+  margin-bottom: 30px;
+
+  &-blocks {
+    display: none;
+
+    @include media-break-point-up(sm) {
+      display: flex;
+    }
+
+    @include media-break-point-only(md) {
+      display: none;
+    }
+  }
+
+  &-title {
+    color: $white;
+    width: 18%;
+    position: absolute;
+    padding: 20px;
+  }
+
+  .shop-all {
+    text-align: center;
+    margin-right: 5px;
+
+    @include media-break-point-up(sm) {
+      width: 266px;
+      height: 258px;
+    }
+
+    @include media-break-point-only(md) {
+      width: 200px;
+      flex: unset;
+    }
+
+    &-title {
+      margin-top: 18px;
+    }
+  }
+
+  .slider-item {
+    width: 160px;
+    min-height: 0;
+
+    @include media-break-point-up(sm) {
+      width: 263px;
+      min-height: 263px;
+    }
+
+    a {
+      width: 100%;
+    }
+  }
+
+  &-image {
+    height: 314px;
+  }
+
+  &-caption {
+    display: block;
+    margin-bottom: 10px;
+
+    @include media-break-point-up(sm) {
+      display: none;
+      margin-bottom: 0;
+    }
+
+    @include media-break-point-only(md) {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .shope-all-mobile {
+      margin-top: 22px;
+      margin-bottom: 22px;
+
+      img {
+        width: 112px;
+
+        @include media-break-point-up(sm) {
+          width: 263px;
+        }
+      }
+    }
+  }
+}

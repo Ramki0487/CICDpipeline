@@ -1,0 +1,26 @@
+@media (prefers-reduced-motion: no-preference) {
+  .body {
+    transition: none;
+  }
+}
+
+.body {
+  max-height: 0;
+  transition: all 0.15s ease-out;
+  overflow: hidden;
+  visibility: hidden;
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    &-show {
+      transition: none;
+    }
+  }
+
+  &-show {
+    max-height: 500px;
+    padding-top: 10px;
+    transition: all 0.25s ease-in;
+    overflow-y: auto;
+    visibility: visible;
+  }
+}

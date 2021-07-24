@@ -1,0 +1,321 @@
+{
+  "searchResponse": {
+    "stats": {
+      "navigationCount": 4,
+      "searchCount": 7,
+      "productCount": 6,
+      "autocompleteResponse": 14,
+      "productSearchResponse": 7
+    },
+    "searchTerms": [
+      {
+        "value": "running shoe",
+        "additionalInfo": {
+          "webSubPgc": ["Running"],
+          "webPgc": ["Shoes"],
+          "brand": ["ASICS"]
+        }
+      },
+      {
+        "value": "trail running shoe",
+        "additionalInfo": {
+          "webPgc": ["Shoes"],
+          "webSubPgc": ["Trail Running"]
+        }
+      },
+      {
+        "value": "run",
+        "additionalInfo": {
+          "webPgc": ["Apparel"]
+        }
+      },
+      {
+        "value": "running jackets",
+        "additionalInfo": {
+          "webPgc": ["Apparel"],
+          "webSubPgc": ["Jackets"]
+        }
+      },
+      {
+        "value": "runner",
+        "additionalInfo": {
+          "webPgc": ["Apparel"],
+          "brand": ["R-Gear"]
+        }
+      },
+      {
+        "value": "road runner",
+        "additionalInfo": {
+          "brand": ["R-Gear"]
+        }
+      },
+      {
+        "value": "2 running",
+        "additionalInfo": {
+          "webPgc": ["Shoes"],
+          "webSubPgc": ["Running"]
+        }
+      }
+    ],
+    "navigations": [
+      {
+        "name": "webSubPgc",
+        "values": ["Running", "Trail Running"]
+      },
+      {
+        "name": "brand",
+        "values": ["RunGuard", "Road Runner Sports"]
+      }
+    ],
+    "products": [
+      {
+        "refinementMatches": null,
+        "collection": "RRS",
+        "id": "2604cddfbd21cc7a31f6ccc7ab5e4905",
+        "url": "http://roadrunnersports1RRS.com/36552",
+        "snippet": null,
+        "title": "Run Jolly Greenlight",
+        "allMeta": {
+          "reg_price": 20,
+          "image_url": "http://s7ondemand1.scene7.com/is/image/roadrunnersports/36552/",
+          "product_id": "36552",
+          "variants": [],
+          "id": "36552",
+          "vip_price": 18,
+          "title": "Run Jolly Greenlight",
+          "brand": "Brooks"
+        }
+      },
+      {
+        "refinementMatches": null,
+        "collection": "RRS",
+        "id": "89d623dec6bda3b3fa2049a747e9a5e4",
+        "url": "http://roadrunnersports1RRS.com/36553",
+        "snippet": null,
+        "title": "Run Jolly Tempo Knit in Crew",
+        "allMeta": {
+          "reg_price": 17,
+          "image_url": "http://s7ondemand1.scene7.com/is/image/roadrunnersports/36553/",
+          "product_id": "36553",
+          "variants": [],
+          "id": "36553",
+          "vip_price": 15.3,
+          "title": "Run Jolly Tempo Knit in Crew",
+          "brand": "Brooks"
+        }
+      },
+      {
+        "refinementMatches": null,
+        "collection": "RRS",
+        "id": "3364c62404b46982bdaf753fe91116b4",
+        "url": "http://roadrunnersports1RRS.com/21903",
+        "snippet": null,
+        "title": "Discovery Trucker Hat",
+        "allMeta": {
+          "reg_price": 27.99,
+          "image_url": "http://s7ondemand1.scene7.com/is/image/roadrunnersports/21903/",
+          "product_id": "21903",
+          "variants": [],
+          "id": "21903",
+          "vip_price": 25.19,
+          "title": "Discovery Trucker Hat",
+          "brand": "Brooks"
+        }
+      },
+      {
+        "refinementMatches": null,
+        "collection": "RRS",
+        "id": "105c77a1e9a3d32419a52b575eea507c",
+        "url": "http://roadrunnersports1RRS.com/28269",
+        "snippet": null,
+        "title": "Pacesetter Sherpa Hat",
+        "allMeta": {
+          "reg_price": 28,
+          "image_url": "http://s7ondemand1.scene7.com/is/image/roadrunnersports/28269/",
+          "product_id": "28269",
+          "variants": [],
+          "id": "28269",
+          "vip_price": 25.2,
+          "title": "Pacesetter Sherpa Hat",
+          "brand": "Brooks"
+        }
+      },
+      {
+        "refinementMatches": null,
+        "collection": "RRS",
+        "id": "b04c9c65e9cac8b51fc642f2ab8bd189",
+        "url": "http://roadrunnersports1RRS.com/33682",
+        "snippet": null,
+        "title": "Ugly Sweater Long Sleeve",
+        "allMeta": {
+          "reg_price": 43.99,
+          "gender_text": "Men's",
+          "image_url": "http://s7ondemand1.scene7.com/is/image/roadrunnersports/33682/",
+          "product_id": "33682",
+          "variants": [],
+          "id": "33682",
+          "vip_price": 39.59,
+          "title": "Ugly Sweater Long Sleeve",
+          "brand": "Brooks"
+        }
+      },
+      {
+        "refinementMatches": null,
+        "collection": "RRS",
+        "id": "6c734bca02d9a56f00cd5e3d8ce74348",
+        "url": "http://roadrunnersports1RRS.com/33683",
+        "snippet": null,
+        "title": "Ugly Sweater Long Sleeve",
+        "allMeta": {
+          "reg_price": 43.99,
+          "gender_text": "Women's",
+          "image_url": "http://s7ondemand1.scene7.com/is/image/roadrunnersports/33683/",
+          "product_id": "33683",
+          "variants": [],
+          "id": "33683",
+          "vip_price": 39.59,
+          "title": "Ugly Sweater Long Sleeve",
+          "brand": "Brooks"
+        }
+      }
+    ]
+  },
+  "responseWithoutProduct": {
+    "stats": {
+      "navigationCount": 4,
+      "searchCount": 7,
+      "productCount": 6,
+      "autocompleteResponse": 14,
+      "productSearchResponse": 7
+    },
+    "searchTerms": [],
+    "navigations": [
+      {
+        "name": "webSubPgc",
+        "values": ["Running", "Trail Running"]
+      },
+      {
+        "name": "brand",
+        "values": ["RunGuard", "Road Runner Sports"]
+      }
+    ],
+    "products": [
+      {
+        "refinementMatches": null,
+        "collection": "RRS",
+        "id": "2604cddfbd21cc7a31f6ccc7ab5e4905",
+        "url": "http://roadrunnersports1RRS.com/36552",
+        "snippet": null,
+        "title": "Run Jolly Greenlight",
+        "allMeta": {
+          "reg_price": 20,
+          "image_url": "http://s7ondemand1.scene7.com/is/image/roadrunnersports/36552/",
+          "product_id": "36552",
+          "variants": [],
+          "id": "36552",
+          "vip_price": 18,
+          "title": "Run Jolly Greenlight",
+          "brand": "Brooks"
+        }
+      },
+      {
+        "refinementMatches": null,
+        "collection": "RRS",
+        "id": "89d623dec6bda3b3fa2049a747e9a5e4",
+        "url": "http://roadrunnersports1RRS.com/36553",
+        "snippet": null,
+        "title": "Run Jolly Tempo Knit in Crew",
+        "allMeta": {
+          "reg_price": 17,
+          "image_url": "http://s7ondemand1.scene7.com/is/image/roadrunnersports/36553/",
+          "product_id": "36553",
+          "variants": [],
+          "id": "36553",
+          "vip_price": 15.3,
+          "title": "Run Jolly Tempo Knit in Crew",
+          "brand": "Brooks"
+        }
+      },
+      {
+        "refinementMatches": null,
+        "collection": "RRS",
+        "id": "3364c62404b46982bdaf753fe91116b4",
+        "url": "http://roadrunnersports1RRS.com/21903",
+        "snippet": null,
+        "title": "Discovery Trucker Hat",
+        "allMeta": {
+          "reg_price": 27.99,
+          "image_url": "http://s7ondemand1.scene7.com/is/image/roadrunnersports/21903/",
+          "product_id": "21903",
+          "variants": [],
+          "id": "21903",
+          "vip_price": 25.19,
+          "title": "Discovery Trucker Hat",
+          "brand": "Brooks"
+        }
+      },
+      {
+        "refinementMatches": null,
+        "collection": "RRS",
+        "id": "105c77a1e9a3d32419a52b575eea507c",
+        "url": "http://roadrunnersports1RRS.com/28269",
+        "snippet": null,
+        "title": "Pacesetter Sherpa Hat",
+        "allMeta": {
+          "reg_price": 28,
+          "image_url": "http://s7ondemand1.scene7.com/is/image/roadrunnersports/28269/",
+          "product_id": "28269",
+          "variants": [],
+          "id": "28269",
+          "vip_price": 25.2,
+          "title": "Pacesetter Sherpa Hat",
+          "brand": "Brooks"
+        }
+      },
+      {
+        "refinementMatches": null,
+        "collection": "RRS",
+        "id": "b04c9c65e9cac8b51fc642f2ab8bd189",
+        "url": "http://roadrunnersports1RRS.com/33682",
+        "snippet": null,
+        "title": "Ugly Sweater Long Sleeve",
+        "allMeta": {
+          "reg_price": 43.99,
+          "gender_text": "Men's",
+          "image_url": "http://s7ondemand1.scene7.com/is/image/roadrunnersports/33682/",
+          "product_id": "33682",
+          "variants": [],
+          "id": "33682",
+          "vip_price": 39.59,
+          "title": "Ugly Sweater Long Sleeve",
+          "brand": "Brooks"
+        }
+      },
+      {
+        "refinementMatches": null,
+        "collection": "RRS",
+        "id": "6c734bca02d9a56f00cd5e3d8ce74348",
+        "url": "http://roadrunnersports1RRS.com/33683",
+        "snippet": null,
+        "title": "Ugly Sweater Long Sleeve",
+        "allMeta": {
+          "reg_price": 43.99,
+          "gender_text": "Women's",
+          "image_url": "http://s7ondemand1.scene7.com/is/image/roadrunnersports/33683/",
+          "product_id": "33683",
+          "variants": [],
+          "id": "33683",
+          "vip_price": 39.59,
+          "title": "Ugly Sweater Long Sleeve",
+          "brand": "Brooks"
+        }
+      }
+    ]
+  },
+  "emptySearchResponse": {
+    "stats": {},
+    "searchTerms": [],
+    "navigations": [],
+    "products": []
+  }
+}

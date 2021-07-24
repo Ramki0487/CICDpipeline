@@ -1,0 +1,140 @@
+@import '@Assets/styles/Mixins.scss';
+@import '@Assets/styles/Colors.scss';
+
+.cart-item {
+  padding: 10px 0;
+  border-bottom: 1px solid $warm-medium-gray;
+
+  &:last-child {
+    border-bottom: none;
+
+    @include media-break-point-up(md) {
+      border-bottom: 1px solid $warm-medium-gray;
+    }
+  }
+
+  &-card {
+    @include media-break-point-up(md) {
+      max-width: 200px;
+    }
+  }
+
+  &-info {
+    height: 100%;
+
+    &-name {
+      line-height: 20px;
+      max-height: 79px;
+      font-size: 14px;
+      padding-bottom: 5px;
+
+      @include make-text-ellipsis(2);
+
+      @include media-break-point-up(md) {
+        line-height: 28px;
+        padding-bottom: 10px;
+        font-size: 20px;
+      }
+    }
+
+    &-line {
+      width: 75%;
+    }
+
+    &-details {
+      line-height: 16px;
+
+      @include media-break-point-up(md) {
+        line-height: 20px;
+      }
+    }
+
+    &-quantity {
+      border: 1px solid $warm-medium-gray;
+      max-width: 80px;
+      height: 36px;
+
+      @include media-break-point-up(md) {
+        max-width: 122px;
+        height: 50px;
+        margin-top: 15px;
+      }
+
+      button {
+        padding: 5px 10px;
+
+        @include media-break-point-down(md) {
+          padding: 0 7px;
+          min-height: 15px;
+          line-height: 10px;
+        }
+      }
+
+      span {
+        font-size: 16px;
+
+        @include media-break-point-up(lg) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &-price {
+      font-weight: 400;
+      text-align: right;
+
+      span {
+        padding-right: 0;
+      }
+
+      &-box {
+        text-align: right;
+        padding-top: 10px;
+
+        @include media-break-point-up(md) {
+          padding-top: 22px;
+        }
+      }
+
+      &-read-only {
+        width: 25%;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        span {
+          padding: 0;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    &-store {
+      color: $RR-Green;
+      line-height: 22px;
+      font-weight: 700;
+
+      @include media-break-point-up(lg) {
+        padding-top: 15px;
+      }
+    }
+
+    &-action {
+      font-weight: 700;
+      line-height: 22px;
+      cursor: pointer;
+    }
+
+    &-add-vip {
+      color: $vip-red;
+      text-decoration: underline;
+      text-align: right;
+      cursor: pointer;
+      font-size: 14px;
+
+      @include media-break-point-down(lg) {
+        font-size: 12px;
+      }
+    }
+  }
+}

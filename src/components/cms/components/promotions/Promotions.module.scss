@@ -1,0 +1,15 @@
+@import '@Assets/styles/Mixins.scss';
+
+.promotion-banner {
+  margin-bottom: 40px;
+  margin-top: 10px;
+
+  @include media-break-point-up(sm) {
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+
+  &-img {
+    width: 100%;
+  }
+}

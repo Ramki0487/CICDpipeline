@@ -1,0 +1,13 @@
+.card-form {
+  &-fields {
+    &-expiry {
+      &-month {
+        div {
+          input {
+            padding: 12px;
+          }
+        }
+      }
+    }
+  }
+}

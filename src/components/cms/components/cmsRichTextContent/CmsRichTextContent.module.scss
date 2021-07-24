@@ -1,0 +1,43 @@
+@import '@Assets/styles/Colors.scss';
+
+.richText {
+  hr {
+    border-top: 1px solid $warm-medium-gray;
+  }
+
+  ul { list-style: disc; }
+
+  blockquote {
+    border-left: 6px solid $palette-grey-gallery;
+    padding-left: 14px;
+  }
+
+  code {
+    background: $palette-grey-gallery;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 10px;
+  }
+
+  b {
+    font-weight: 900;
+  }
+
+  i {
+    font-style: italic;
+  }
+
+  u {
+    text-decoration: underline;
+  }
+
+  .p-tag {
+    margin: 16px 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

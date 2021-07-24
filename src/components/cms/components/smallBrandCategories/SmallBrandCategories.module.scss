@@ -1,0 +1,10 @@
+@import '@Assets/styles/Mixins.scss';
+
+.promotion-slider {
+  width: 100px;
+  margin-top: 50px;
+
+  @include media-break-point-up(sm) {
+    width: 225px;
+  }
+}

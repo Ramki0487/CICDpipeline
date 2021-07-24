@@ -1,0 +1,46 @@
+@import "@Assets/styles/Mixins";
+
+$colCount: 12;
+$OPTIONS_ALIGN_SELF: 'auto', 'flex-start', 'flex-end', 'center', 'baseline', 'stretch';
+
+// Flexbox Layout, Stacked to horizontal in all screen sizes
+.col {
+  flex: 1 0 0%;
+  max-width: 100%;
+  width: 100%;
+  word-break: break-word;
+
+  &-breakpoints {
+    flex: 1 0 100%;
+  }
+
+  // Auto Layout, Takes maximum posible space else pushes the block down
+  &-auto {
+    flex: 1 0 auto;
+    width: auto;
+  }
+
+  // No Flex, Applies the natural width of the content, Act as a plain div
+  &-noflex {
+    flex: none;
+    width: auto;
+  }
+}
+
+// Generate break point classes for Responsive Layout
+// Default breakpoints
+@include generate-breakpoint-classes(xs, $colCount);
+
+// Responsive breakpoints
+@each $var in $BREAK_POINTS {
+  @include media-break-point-up(#{$var}) {
+    @include generate-breakpoint-classes(#{$var}, $colCount);
+  }
+}
+
+// Generate Align Self rules for flex child
+@each $var in $OPTIONS_ALIGN_SELF {
+  .align-self-#{$var} {
+    align-self: #{$var};
+  }
+}

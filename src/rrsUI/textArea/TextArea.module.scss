@@ -1,0 +1,9 @@
+@import "@Assets/styles/Colors.scss";
+
+.textarea {
+  border: 1px solid $very-light-gray;
+  border-radius: 3px;
+  outline: $warm-gray;
+  padding: 15px;
+  width: 100%;
+}

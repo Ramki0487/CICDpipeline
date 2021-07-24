@@ -1,0 +1,23 @@
+@import '@Assets/styles/Colors.scss';
+@import '@Assets/styles/Mixins.scss';
+
+.tab {
+  display: flex;
+  flex: 1;
+
+  &-item {
+    border-bottom: 2px solid $warm-medium-gray;
+    cursor: pointer;
+    flex-basis: 50%;
+    padding: 10px 0;
+    text-align: center;
+
+    @include media-break-point-up(lg) {
+      padding: 10px 20px;
+    }
+
+    &-active {
+      border-bottom: 5px solid $RR-SkyBlue;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import '@Assets/styles/Colors.scss';
+@import '@Assets/styles/Mixins.scss';
+
+.wrapper {
+  padding-top: 40px;
+  max-width: 650px;
+
+  .top-text {
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .or {
+    &-text {
+      margin: 0 10px;
+      font-style: italic;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      flex: 1 1;
+      border-bottom: 1px solid $very-light-gray;
+      margin: auto;
+    }
+  }
+
+  .form-content {
+    margin-top: 30px;
+  }
+
+  .section-header {
+    font-style: italic;
+  }
+
+  .vip-text {
+    color: $asphalt;
+    font-size: 13px;
+  }
+
+  form {
+    width: 100%;
+
+    @include media-break-point-up(lg) {
+      margin-top: 30px;
+      width: 280px;
+    }
+  }
+
+  .divider {
+    background-color: $very-light-gray;
+    height: 1px;
+    width: 100%;
+
+    @include media-break-point-up(lg) {
+      margin-top: 30px;
+      height: unset;
+      width: 1px;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    font-size: 13px;
+    color: $asphalt;
+    cursor: pointer;
+  }
+}

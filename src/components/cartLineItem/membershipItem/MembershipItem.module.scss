@@ -1,0 +1,76 @@
+@import '@Assets/styles/Mixins.scss';
+@import '@Assets/styles/Colors.scss';
+
+.membership-item {
+  padding: 10px 0;
+  border-bottom: 1px solid $warm-medium-gray;
+
+  &-card {
+    @include media-break-point-up(md) {
+      max-width: 230px;
+    }
+
+    &-img {
+      max-height: 122px;
+
+      @include media-break-point-up(md) {
+        max-height: 230px;
+      }
+    }
+  }
+
+  &-info {
+    height: 100%;
+
+    &-name {
+      line-height: 20px;
+
+      @include make-text-ellipsis(2);
+    }
+
+    &-action {
+      font-weight: 700;
+      line-height: 22px;
+      cursor: pointer;
+    }
+
+    &-Message {
+      color: $vip-red;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+    &-icon {
+      margin-right: 10px;
+    }
+
+    &-price {
+      font-weight: 400;
+      text-align: right;
+
+      @include media-break-point-up(md) {
+        padding-top: 35px;
+      }
+
+      span {
+        padding-right: 0;
+      }
+
+      &-box {
+        text-align: right;
+        padding-top: 22px;
+      }
+    }
+
+    &-desc {
+      font-size: 12px;
+      line-height: 17px;
+
+      @include media-break-point-up(md) {
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 82%;
+      }
+    }
+  }
+}

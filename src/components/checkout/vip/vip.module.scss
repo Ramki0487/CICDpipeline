@@ -1,0 +1,76 @@
+@import '../../../assets/styles/Colors.scss';
+@import '../../../assets/styles/Mixins.scss';
+
+.wrapper {
+  padding-top: 40px;
+  max-width: 650px;
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .vip-red {
+    color: $vip-red;
+  }
+
+  .default-text {
+    color: $asphalt;
+  }
+
+  .price-card {
+    padding: 10px 5px;
+
+    @include media-break-point-up(sm) {
+      padding: 20px 0;
+      width: 160px;
+    }
+
+    .price-card-text {
+      font-size: 13px;
+      font-weight: 700;
+    }
+  }
+
+  .plus {
+    margin: auto 0;
+    height: 20px;
+    width: 20px;
+
+    .horizontal-line {
+      background-color: $asphalt;
+      position: absolute;
+      margin: auto 0;
+      height: 1px;
+      width: 5px;
+
+      @include media-break-point-up(sm) {
+        width: 15px;
+      }
+    }
+
+    .vertical-line {
+      background-color: $asphalt;
+      position: absolute;
+      margin: auto 0;
+      height: 1px;
+      width: 5px;
+      transform: rotate(90deg);
+
+      @include media-break-point-up(sm) {
+        width: 15px;
+      }
+    }
+  }
+
+  .divider {
+    background-color: $very-light-gray;
+    height: 1px;
+    padding: 0 10px;
+    width: 100%;
+
+    @include media-break-point-up(sm) {
+      padding: 0;
+      width: 300px;
+    }
+  }
+}

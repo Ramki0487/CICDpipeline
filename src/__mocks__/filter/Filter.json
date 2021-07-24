@@ -1,0 +1,324 @@
+{
+  "filter": {
+    "title": "Filter Products",
+    "product_count": 234,
+    "list": [
+      {
+        "id": 1,
+        "title": "Gender",
+        "type": 1,
+        "list": [
+          {
+            "title": "Women",
+            "count": 81
+          },
+          {
+            "title": "Men",
+            "count": 246
+          },
+          {
+            "title": "Unisex",
+            "count": 17
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Category",
+        "type": 1,
+        "list": [
+          {
+            "title": "Running",
+            "count": 67
+          },
+          {
+            "title": "Trail Running",
+            "count": 78
+          },
+          {
+            "title": "Racing",
+            "count": 12
+          },
+          {
+            "title": "Cross County",
+            "count": 10
+          },
+          {
+            "title": "Track and field",
+            "count": 12
+          },
+          {
+            "title": "Cross Training",
+            "count": 77
+          },
+          {
+            "title": "Scandals",
+            "count": 176
+          },
+          {
+            "title": "Walking",
+            "count": 37
+          },
+          {
+            "title": "24/7 Casual",
+            "count": 13
+          },
+          {
+            "title": "Hiking",
+            "count": 43
+          },
+          {
+            "title": "Tennis/Volleyball",
+            "count": 15
+          },
+          {
+            "title": "Injury Prevention & Recovery",
+            "count": 90
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Brand",
+        "type": 4,
+        "list": [
+          {
+            "title": "Addidas",
+            "count": 10
+          },
+          {
+            "title": "ASICS",
+            "count": 20
+          },
+          {
+            "title": "Brooks",
+            "count": 30
+          },
+          {
+            "title": "Hoka One One",
+            "count": 36
+          },
+          {
+            "title": "Mizuno",
+            "count": 20
+          },
+          {
+            "title": "New Balance",
+            "count": 25
+          },
+          {
+            "title": "Nike",
+            "count": 10
+          },
+          {
+            "title": "Saucony",
+            "count": 19
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Shoe Size & Width",
+        "type": 2,
+        "list": [
+          {
+            "title": "4"
+          },
+          {
+            "title": "4.5"
+          },
+          {
+            "title": "5"
+          },
+          {
+            "title": "5.5"
+          },
+          {
+            "title": "6"
+          },
+          {
+            "title": "6.5"
+          },
+          {
+            "title": "7"
+          },
+          {
+            "title": "7.5"
+          },
+          {
+            "title": "8"
+          },
+          {
+            "title": "8.5"
+          },
+          {
+            "title": "9"
+          },
+          {
+            "title": "9.5"
+          },
+          {
+            "title": "10"
+          },
+          {
+            "title": "10.5"
+          },
+          {
+            "title": "11"
+          },
+          {
+            "title": "12"
+          },
+          {
+            "title": "13"
+          },
+          {
+            "title": "14+"
+          },
+          {
+            "title": "Narrow"
+          },
+          {
+            "title": "Wide"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Shoe Cushion",
+        "type": 1,
+        "list": [
+          {
+            "title": "Light and Fast ",
+            "count": 105
+          },
+          {
+            "title": "Mid-Level",
+            "count": 99
+          },
+          {
+            "title": "Max",
+            "count": 6
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Shoe Category",
+        "type": 1,
+        "list": [
+          {
+            "title": "Neutral",
+            "count": 144
+          },
+          {
+            "title": "Stability",
+            "count": 99
+          },
+          {
+            "title": "Motion Control",
+            "count": 10
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Color",
+        "type": 3,
+        "list": [
+          {
+            "title": "black",
+            "count": 144
+          },
+          {
+            "title": "blue",
+            "count": 94
+          },
+          {
+            "title": "gray",
+            "count": 94
+          },
+          {
+            "title": "white",
+            "count": 115
+          },
+          {
+            "title": "purple",
+            "count": 33
+          },
+          {
+            "title": "green",
+            "count": 32
+          },
+          {
+            "title": "pink",
+            "count": 25
+          },
+          {
+            "title": "red",
+            "count": 25
+          },
+          {
+            "title": "brown",
+            "count": 11
+          },
+          {
+            "title": "yellow",
+            "count": 12
+          },
+          {
+            "title": "beige",
+            "count": 8
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Price",
+        "type": 1,
+        "list": [
+          {
+            "title": "0"
+          },
+          {
+            "title": "200"
+          }
+        ]
+      }
+    ]
+  },
+  "sort": {
+    "title": "Sort Products",
+    "list": [
+      "Featured",
+      "Popularity",
+      "Price: High to Low",
+      "Price: Low to High",
+      "Top Rated",
+      "Most Rated",
+      "Best Sellers",
+      "What's New",
+      "Sale"
+    ]
+  },
+  "tags": [
+    {
+      "title": "Neutral"
+    },
+    {
+      "title": "Stability"
+    },
+    {
+      "title": "Trail"
+    },
+    {
+      "title": "Racing"
+    },
+    {
+      "title": "Cross Country"
+    },
+    {
+      "title": "Track and Field"
+    }
+  ]
+}

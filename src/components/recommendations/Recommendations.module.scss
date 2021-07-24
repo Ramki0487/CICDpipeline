@@ -1,0 +1,29 @@
+@import '@Assets/styles/Colors.scss';
+@import '@Assets/styles/Mixins.scss';
+
+.recommendations {
+  &-list {
+    margin: 60px 0;
+
+    &-title {
+      margin-bottom: 10px;
+      padding-left: 0;
+
+      @include media-break-point-up(md) {
+        padding-left: 8px;
+      }
+    }
+
+    &-item {
+      width: 270px;
+
+      @include media-break-point-up(lg) {
+        width: 320px;
+      }
+
+      > div {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+@import '@Assets/styles/Variables.scss';
+@import '@Assets/styles/Colors.scss';
+
+.menu {
+  display: flex;
+  width: 100%;
+  margin-left: -15px;
+  margin-top: -15px;
+
+  &-blocks {
+    max-height: 600px;
+  }
+
+  &-item {
+    padding: 15px;
+    font-size: 18px;
+    line-height: 1.1;
+
+    @media screen and (prefers-reduced-motion: reduce) {
+      .expandable-block {
+        transition: none;
+      }
+    }
+
+    .expandable-block {
+      background: $white;
+      min-height: 400px;
+      position: absolute;
+      visibility: hidden;
+      left: 0;
+      right: 0;
+      z-index: $zindex-dropdown;
+      padding: 25px 0;
+      transform: scaleY(0);
+      opacity: 0;
+      transition: visibility 0.4s linear, opacity 0.4s linear;
+      box-shadow: 0 0 4px $very-light-gray;
+      margin-top: 15px;
+      overflow: hidden;
+
+      .category {
+        padding-right: 20px;
+        margin-bottom: 10px;
+        max-width: 350px;
+      }
+
+      .no-category {
+        .menu-links {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &-expandable {
+      >a {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 0;
+          border-left: 16px solid transparent;
+          border-right: 16px solid transparent;
+          border-top: 12px solid $RR-SkyBlue;
+          z-index: $zindex-fixed;
+          transform: scaleX(0);
+          bottom: -25px;
+          right: 0;
+          left: 0;
+          margin: 0 auto;
+        }
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        > a::after {
+          transform: scaleX(1);
+        }
+
+        .expandable-block {
+          visibility: visible;
+          transform: scaleY(1);
+          transition-delay: 0.1s;
+          opacity: 1;
+        }
+      }
+    }
+
+    &-icon {
+      &:hover,
+      &:focus {
+        background: $RR-Navy;
+
+        a {
+          color: $RR-SkyBlue;
+        }
+      }
+
+      img {
+        vertical-align: bottom;
+        display: inline-block;
+        width: 35px;
+        height: 18px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &-aside {
+    max-width: 500px;
+  }
+}

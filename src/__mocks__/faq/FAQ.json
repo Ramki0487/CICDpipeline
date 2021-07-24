@@ -1,0 +1,49 @@
+{
+  "frequentAnswer": [
+    {
+      "id": 1,
+      "question": "How do I track my order?",
+      "answer": "How do I track my order?"
+    },
+    {
+      "id": 2,
+      "question": "How do I return an item?",
+      "answer": "How do I return an item?"
+    },
+    {
+      "id": 3,
+      "question": "How do I get a return form or return label?",
+      "answer": "How do I get a return form or return label?"
+    },
+    {
+      "id": 4,
+      "question": "How do I manage my VIP Family Membership?",
+      "answer": "How do I manage my VIP Family Membership?"
+    },
+    {
+      "id": 5,
+      "question": "How do I check my rewards balance?",
+      "answer": "How do I check my rewards balance?"
+    },
+    {
+      "id": 6,
+      "question": "What if my package hasn't arrived?",
+      "answer": "What if my package hasn't arrived?"
+    },
+    {
+      "id": 7,
+      "question": "How do I exchange my item?",
+      "answer": "How do I exchange my item?"
+    },
+    {
+      "id": 8,
+      "question": "How do I contact Road Runner Sports?",
+      "answer": "How do I contact Road Runner Sports?"
+    },
+    {
+      "id": 9,
+      "question": "How do I get an invoice?",
+      "answer": "How do I get an invoice?"
+    }
+  ]
+}

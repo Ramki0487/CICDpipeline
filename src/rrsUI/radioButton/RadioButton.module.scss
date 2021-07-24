@@ -1,0 +1,47 @@
+@import '@Assets/styles/Colors.scss';
+
+$md-radio-size: 20px;
+$md-radio-checked-size: 12px;
+
+.radio-button {
+  label {
+    cursor: pointer;
+  }
+
+  &-input {
+    appearance: none;
+    min-height: 20px;
+    position: relative;
+    padding-left: 25px;
+    vertical-align: bottom;
+    margin: 0;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      border-radius: 50%;
+    }
+
+    &::before {
+      left: 0;
+      top: 0;
+      width: $md-radio-size;
+      height: $md-radio-size;
+      border: 1px solid $black;
+    }
+
+    &::after {
+      top: $md-radio-size / 2 - $md-radio-checked-size / 2;
+      left: $md-radio-size / 2 - $md-radio-checked-size / 2;
+      width: $md-radio-checked-size;
+      height: $md-radio-checked-size;
+      transform: scale(0);
+      background: $black;
+    }
+
+    &:checked::after {
+      transform: scale(1);
+    }
+  }
+}

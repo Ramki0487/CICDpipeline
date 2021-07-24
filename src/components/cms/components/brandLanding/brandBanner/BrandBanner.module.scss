@@ -1,0 +1,76 @@
+@import '@Assets/styles/Colors.scss';
+@import '@Assets/styles/Mixins.scss';
+
+.brand {
+  background: $RR-Navy;
+  color: $white;
+  margin-bottom: 20px;
+
+  @include media-break-point-up(lg) {
+    flex-direction: row-reverse;
+    margin-bottom: 40px;
+  }
+
+  &-content {
+    position: relative;
+    margin-bottom: 40px;
+
+    &-title {
+      margin-top: 15px;
+      text-transform: uppercase;
+
+      @include media-break-point-up(lg) {
+        margin-top: 30px;
+      }
+    }
+
+    &-caption {
+      font-weight: 700;
+      margin-top: 20px;
+
+      @include media-break-point-up(lg) {
+        margin-top: 40px;
+      }
+    }
+
+    &-description {
+      font-size: 13px;
+      margin-top: 20px;
+
+      @include media-break-point-up(lg) {
+        margin-top: 25px;
+      }
+    }
+
+    &-logo {
+      width: 115px;
+      height: 115px;
+      position: absolute;
+      right: 10px;
+      top: -57px;
+
+      @include media-break-point-up(lg) {
+        right: -57px;
+        margin: auto;
+        bottom: 0;
+        top: 0;
+      }
+
+      @include media-break-point-up(xxl) {
+        width: 175px;
+        height: 175px;
+        right: -87px;
+      }
+    }
+  }
+
+  &-banner {
+    min-height: 175px;
+    background-size: cover;
+    background-position: left  bottom;
+
+    @include media-break-point-up(lg) {
+      min-height: 395px;
+    }
+  }
+}

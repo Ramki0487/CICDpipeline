@@ -1,0 +1,40 @@
+@import '@Assets/styles/Colors.scss';
+
+.price {
+  font-weight: 700;
+
+  &-original {
+    padding-right: 10px;
+    color: $RR-Navy;
+  }
+
+  &-offer {
+    font-size: 14px;
+    color: $warm-gray;
+    font-weight: 400;
+  }
+
+  &-sale,
+  &-vip {
+    padding-right: 10px;
+    color: $vip-red;
+  }
+
+  &-striked {
+    text-decoration: line-through;
+    color: $RR-Navy;
+  }
+}
+
+.message {
+  &-vip {
+    font-weight: 400;
+    color: $vip-red;
+  }
+
+  &-vip-benefits {
+    color: $RR-SkyBlue;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+}

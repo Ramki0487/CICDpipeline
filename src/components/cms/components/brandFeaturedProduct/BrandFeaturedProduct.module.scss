@@ -1,0 +1,52 @@
+@import '@Assets/styles/Colors.scss';
+@import '@Assets/styles/Mixins.scss';
+
+.brand-feature {
+  margin-top: 60px;
+
+  &-content-inner {
+    margin-bottom: 0;
+
+    @include media-break-point-up(sm) {
+      min-height: 630px;
+    }
+  }
+
+  .position-right {
+    order: 0;
+
+    @include media-break-point-up(md) {
+      order: 1;
+    }
+  }
+
+  .position-left {
+    order: 0;
+  }
+
+  &-content {
+    position: relative;
+    background: $RR-SkyBlue;
+
+    // @include media-break-point-down(sm) {
+    //   order: 1;
+    // }
+
+    &-container {
+      height: 100%;
+      padding: 65px;
+
+      .card {
+        padding-bottom: 20px;
+
+        &-description {
+          padding-bottom: 20px;
+
+          @include media-break-point-up(sm) {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}

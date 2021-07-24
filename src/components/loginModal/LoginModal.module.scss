@@ -1,0 +1,85 @@
+@import '@Assets/styles/Colors.scss';
+@import '@Assets/styles/Mixins.scss';
+
+.modal-overlay {
+  width: 500px;
+
+  .login-content {
+    padding: 20px 0;
+  }
+
+  .wrapper {
+    width: 100%;
+    padding: 0 10px;
+
+    @include media-break-point-up(lg) {
+      padding: 0 30px;
+    }
+
+    .header-text,
+    h3 {
+      color: $RR-Navy;
+    }
+
+    div.header {
+      padding: 0 0 20px 0;
+
+      &-text {
+        text-align: center;
+        margin: 30px auto 0 auto;
+      }
+    }
+
+    .info-text {
+      color: $RR-Navy;
+    }
+
+    .form {
+      width: 100%;
+      margin-bottom: 20px;
+
+      &-text {
+        color: $RR-Navy;
+      }
+
+      .input {
+        border-color: $very-light-gray;
+      }
+
+      .buttons {
+        .vip-membership {
+          margin-top: 10px;
+          color: $RR-Navy;
+          cursor: pointer;
+          font-weight: bold;
+        }
+
+        .phone-and-email {
+          cursor: pointer;
+          font-size: 15px;
+          margin: 10px 0;
+
+          & + div > button {
+            @include media-break-point-down(lg) {
+              padding: 5px 10px;
+            }
+          }
+        }
+
+        .tab-options {
+          padding: 0;
+        }
+      }
+    }
+
+    .clickable-text {
+      color: $asphalt;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .forget-password-form {
+      margin-bottom: 40px;
+    }
+  }
+}

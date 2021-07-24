@@ -1,0 +1,34 @@
+@import '@Assets/styles/Colors.scss';
+@import '@Assets/styles/Mixins.scss';
+
+.brand-test-container {
+  margin-top: 40px;
+  background: $RR-IceBlue 0% 0% no-repeat padding-box;
+
+  &-box {
+    .video-box {
+      padding: 10px;
+
+      @include media-break-point-up(sm) {
+        margin-bottom: 60px;
+      }
+    }
+
+    .video-container {
+      background: $very-light-gray 0% 0% no-repeat padding-box;
+
+      .video {
+        height: 300px;
+      }
+
+      &-title {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &-title {
+    font-size: 26px;
+    padding: 20px;
+  }
+}

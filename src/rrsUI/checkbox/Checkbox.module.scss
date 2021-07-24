@@ -1,0 +1,98 @@
+@import "@Assets/styles/Colors.scss";
+
+.checkbox {
+  label {
+    cursor: pointer;
+    color: $warm-gray;
+    display: flex;
+    align-items: center;
+    user-select: none;
+  }
+
+  &-color-option {
+    border-radius: 1rem;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+
+  &-label-text {
+    margin-top: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &-input {
+      transition: none;
+    }
+  }
+
+  &-input {
+    appearance: none;
+    border: 1px solid $warm-gray;
+    border-radius: 2px;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    cursor: pointer;
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    transition: background-color 0.3s ease;
+
+    &:checked {
+      display: block;
+      background-color: $RR-Navy;
+      position: relative;
+
+      &::after {
+        border-bottom: 3px solid $white;
+        border-right: 3px solid $white;
+        content: "";
+        position: absolute;
+        margin-top: 7px;
+        margin-left: 9px;
+        transform: translate(-50%, -50%) rotateZ(40deg);
+        width: 8px;
+        height: 13px;
+      }
+    }
+  }
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    &-tile {
+      transition: none;
+    }
+  }
+
+  &-tile {
+    cursor: pointer;
+    border: 1px solid $warm-medium-gray;
+
+    label {
+      padding: 5px 10px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    &.active {
+      background-color: $RR-IceBlue;
+      border: 2px solid $RR-Navy;
+
+      label {
+        padding: 4px 9px;
+      }
+
+      .checkbox-label-text {
+        color: $asphalt;
+      }
+    }
+
+    .checkbox-input {
+      display: none;
+
+      &:checked {
+        display: none;
+      }
+    }
+  }
+}

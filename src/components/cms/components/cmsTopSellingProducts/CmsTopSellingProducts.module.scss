@@ -1,0 +1,54 @@
+@import '@Assets/styles/Colors.scss';
+@import '@Assets/styles/Mixins.scss';
+
+.top-selling {
+  @include media-break-point-up(lg) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &-category {
+    position: relative;
+
+    &-image {
+      display: none;
+    }
+
+    @include media-break-point-up(lg) {
+      &-image {
+        display: block;
+      }
+
+      h3 {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: $white;
+      }
+    }
+  }
+
+  &-shop-all {
+    text-align: center;
+    width: 100px;
+    margin-top: 30px;
+
+    @include media-break-point-up(md) {
+      margin-top: 20px;
+      width: 250px;
+    }
+
+    &-btn {
+      width: 85px;
+      height: 85px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding: 10px;
+
+      @include media-break-point-up(md) {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}

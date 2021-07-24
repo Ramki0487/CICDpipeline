@@ -1,0 +1,75 @@
+@import '@Assets/styles/Colors.scss';
+@import '@Assets/styles/Mixins.scss';
+
+.brands {
+  margin: 50px 0;
+
+  &-title {
+    margin-bottom: 25px;
+
+    @include media-break-point-up(sm) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &-list {
+    max-height: fit-content;
+    margin-bottom: 50px;
+
+    @include media-break-point-up(sm) {
+      max-height: 1200px;
+    }
+
+    &-heading {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: $asphalt;
+    }
+
+    div {
+      opacity: 0.1;
+    }
+
+    @media screen and (prefers-reduced-motion: reduce) {
+      div &-active {
+        transition: none;
+      }
+    }
+
+    div &-active {
+      opacity: 1;
+      transition: opacity 0.5s;
+    }
+  }
+
+  &-tab {
+    border-bottom: 1px solid $RR-SkyBlue;
+
+    @include media-break-point-down(sm) {
+      overflow-x: auto;
+      flex-wrap: initial;
+    }
+
+    &-item {
+      cursor: pointer;
+      font-style: italic;
+      margin-bottom: -1px;
+
+      @include media-break-point-down(sm) {
+        margin-right: 20px;
+      }
+
+      h3 {
+        width: fit-content;
+        text-transform: capitalize;
+      }
+
+      &-active {
+        border-bottom: 3px solid $RR-Navy;
+      }
+    }
+  }
+}

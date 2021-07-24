@@ -1,0 +1,58 @@
+@import '@Assets/styles/Colors.scss';
+
+.menu {
+  height: 100%;
+
+  &-chevron path {
+    stroke: $RR-SkyBlue;
+  }
+
+  &-navs {
+    background: $natural;
+    margin-top: 65px;
+
+    a {
+      flex-grow: 2;
+      font-size: 16px;
+    }
+  }
+
+  ul {
+    li {
+      font-weight: 700;
+      padding: 15px 18px 15px 25px;
+      border-bottom: 1px solid $very-light-gray;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+
+      a {
+        display: inline-block;
+        width: 100%;
+      }
+
+      h3 {
+        flex-grow: 2;
+        text-transform: uppercase;
+      }
+
+      &.menu-icon {
+        &:hover,
+        &:focus {
+          background: $RR-Navy;
+
+          a,
+          h3 {
+            color: $RR-SkyBlue;
+          }
+        }
+
+        img {
+          width: 35px;
+          height: 18px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

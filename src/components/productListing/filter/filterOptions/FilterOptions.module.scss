@@ -1,0 +1,29 @@
+@import '@Assets/styles/Colors.scss';
+
+.filter-item {
+  &-checkbox span {
+    color: $asphalt;
+  }
+}
+
+.accordion {
+  padding: 15px  0;
+
+  &-head {
+    h4 {
+      text-transform: capitalize;
+      margin-bottom: 3px;
+      width: 100%;
+    }
+
+    &-tags {
+      color: $black;
+    }
+  }
+
+  &-body {
+    li {
+      padding: 3px 0;
+    }
+  }
+}

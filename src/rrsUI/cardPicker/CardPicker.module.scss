@@ -1,0 +1,13 @@
+@import '@Assets/styles/Colors.scss';
+
+.card-picker {
+  max-width: 230px;
+  padding: 10px;
+  border: 2px solid $warm-medium-gray;
+  margin: 10px;
+  cursor: pointer;
+
+  &-selected {
+    border-color: $RR-Navy;
+  }
+}
