@@ -10,8 +10,3 @@ phases:
   install:
     commands:
       - aws cloudformation package --template-file SamTemplate.yml --s3-bucket lambda2507 --output-template-file outputSamTemplate.yml
-  artifacts:
-  type: zip
-  files:
-    - samTemplate.yml
-    - outputSamTemplate.yml
