@@ -362,7 +362,7 @@
                 "Ref": "ServerlessDeploymentBucket"
             },
             "Export": {
-                "Name": "sls-rrs-serverless-dev-ServerlessDeploymentBucketName"
+                "Name": "sls-codepipeline-ap-south-1-749537024090-ServerlessDeploymentBucketName"
             }
         },
         "NextJsAppLambdaFunctionQualifiedArn": {
