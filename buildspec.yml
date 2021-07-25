@@ -29,7 +29,6 @@ phases:
   post_build:
     commands:
       - echo "Listing artifacts..."
-      - "ls -lR artifacts/"
 
 artifacts:
   type: zip
