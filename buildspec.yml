@@ -7,11 +7,5 @@ phases:
 
       # Upgrade AWS CLI to the latest version
       - pip install --upgrade awscli
-  build:
-    commands:
-      # Use AWS SAM to package the application using AWS CloudFormation
- 
 artifacts:
-  type: zip
-  files:
-    - samTemplate.yml
+  
