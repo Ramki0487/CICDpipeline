@@ -1,8 +1,8 @@
 version: 0.2
 phases:
   install:
-      runtime-versions:
-      Node.js: 12.x
+      runtime-versions: 
+      Node.js: 12.6
     commands:
       # Install dependencies needed for running tests
       - npm install
