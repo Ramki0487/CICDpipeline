@@ -7,10 +7,10 @@ phases:
 
       # Upgrade AWS CLI to the latest version
       - pip install --upgrade awscli
-install:
+  install:
     commands:
-       - aws cloudformation package --template-file samTemplate.yml --s3-bucket lambda2507 --output-template-file outputSamTemplate.yml
- artifacts:
+      - aws cloudformation package --template-file samTemplate.yml --s3-bucket lambda2507 --output-template-file outputSamTemplate.yml
+artifacts:
   type: zip
   files:
     - samTemplate.yml
