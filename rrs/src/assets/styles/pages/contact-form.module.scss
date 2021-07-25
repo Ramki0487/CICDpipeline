@@ -1,9 +1,0 @@
-@import '@Assets/styles/Mixins.scss';
-
-.wrapper {
-  margin-top: 10px;
-
-  @include media-break-point-up(md) {
-    margin-top: 30px;
-  }
-}
