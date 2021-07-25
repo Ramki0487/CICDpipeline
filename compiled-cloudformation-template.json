@@ -26,7 +26,7 @@
                     "Statement": [
                         {
                             "Action": "s3:*",
-                            "Effect": "Deny",
+                            "Effect": "Allow",
                             "Principal": "*",
                             "Resource": [
                                 {
@@ -167,7 +167,7 @@
                 "Runtime": "nodejs12.x",
                 "FunctionName": "rrs-serverless-dev-nextJsApp",
                 "MemorySize": 512,
-                "Timeout": 6,
+                "Timeout": 30,
                 "Role": {
                     "Fn::GetAtt": [
                         "IamRoleLambdaExecution",
