@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "es2017"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "paths": {
+      "@Mocks/*": ["src/__mocks__/*"],
+      "@Assets/*": ["src/assets/*"],
+      "@RRS-UI/*": ["src/rrsUI/*"],
+      "@Configs/*": ["src/configs/*"],
+      "@Hooks/*": ["src/hooks/*"],
+      "@Libs/*": ["src/libs/*"],
+      "@Components/*": ["src/components/*"],
+      "@Redux/*": ["src/redux/*"],
+      "@Services/*": ["src/services/*"],
+      "@Utils/*": ["src/utils/*"],
+      "@App/*": ["src/app/*"]
+    },
+    "strict": true,
+    "target": "es2017"
+  },
+  "exclude": ["node_modules", ".next", ".storybook", "storybook", "coverage"],
+  "include": ["src/**/*"]
+}

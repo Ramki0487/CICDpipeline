@@ -1,0 +1,25 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2021-07-25'
+Description: CD Demo Lambda
+Resources:
+  CDDemoLambda:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: serverless/index.handler
+      Runtime: 
+      CodeUri: ./
+      Description: 'Lambda function for CD Demo'
+      MemorySize: 512
+      Timeout: 30
+      Role: 'arn:aws:iam::237313376626:role/cloudformationrole'
+ plugins:
+   - serverless-offline
+      Events:
+        getAZsAPI:
+          Type: Api
+          Properties:
+            Path: /getazs
+            Method: get
+      Environment:
+        Variables:
+          REGION: ap-south-1
