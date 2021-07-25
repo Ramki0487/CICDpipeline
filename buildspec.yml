@@ -1,7 +1,8 @@
 version: 0.2
 phases:
   install:
-      runtime-versions: python3.7 
+      runtime-versions: 
+          - python3.7 
     commands:
       # Install dependencies needed for running tests
       - npm install
