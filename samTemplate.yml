@@ -7,7 +7,7 @@ Resources:
     Properties:
       Handler: serverless/index.handler
       Runtime: 
-      CodeUri: ./
+      CodeUri: https://github.com/Ramki0487/Ramki.git
       Description: 'Lambda function for CD Demo'
       MemorySize: 512
       Timeout: 30
