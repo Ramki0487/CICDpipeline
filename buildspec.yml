@@ -15,4 +15,3 @@ artifacts:
   type: zip
   files:
     - samTemplate.yml
-    - outputSamTemplate.yml
