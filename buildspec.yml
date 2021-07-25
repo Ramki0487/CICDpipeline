@@ -1,5 +1,4 @@
 version: 0.2
-
 phases:
   install:
     commands:
@@ -11,9 +10,7 @@ phases:
   build:
     commands:
       # Use AWS SAM to package the application using AWS CloudFormation
-  install:
-    commands:
-      - aws cloudformation package --template-file samTemplate.yml --s3-bucket lambda2507 --output-template-file outputSamTemplate.yml
+ 
 artifacts:
   type: zip
   files:
