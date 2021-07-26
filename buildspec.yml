@@ -17,7 +17,6 @@ artifacts:
   files:
     - template.yml
 secondary-artifacts:
-    artifactIdentifier:lambdacd
       files:
         - lambda2507 
         - lambda2507
