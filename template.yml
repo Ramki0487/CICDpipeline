@@ -6,7 +6,7 @@ provider:
   region: ap-south-1
   memorySize: 512
   Timeout: 30
-  CodeUri: ./
+  CodeUri: s3://lambda2507
   Runtime: nodejs10.x
   Policies:
         # Give Lambda basic execution Permission to the scheduledEventLogger
