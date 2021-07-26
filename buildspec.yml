@@ -21,5 +21,4 @@ secondary-artifacts:
         - lambda2507 
         - lambda2507
       name: lambdacd
-      discard-paths: yes
     - lambdacd.yml
