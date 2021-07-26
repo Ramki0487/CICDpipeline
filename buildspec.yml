@@ -8,7 +8,7 @@ phases:
     commands:
       # Remove all dependencies not needed for the Lambda deployment package (the packages from devDependencies in package.json)
       - npm prune --production
-  build:
+  build:  
     commands:
       # Use AWS SAM to package the application by using AWS CloudFormation
       - aws cloudformation package --template template.yml --s3-bucket lambda2507 --output-template template.yml
@@ -16,4 +16,7 @@ artifacts:
   type: zip
   files:
     - template.yml
+secondary-artifacts:
+  type: zip
+  files:
     - lambdacd.yml
