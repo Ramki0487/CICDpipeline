@@ -11,14 +11,9 @@ phases:
   build:  
     commands:
       # Use AWS SAM to package the application by using AWS CloudFormation
-      - aws cloudformation package --template template.yml --s3-bucket lambda2507 --output-template template.yml
+      - aws cloudformation package --template template.yml --s3-bucket lambda2507 --output-template lambdacd.yml
 artifacts:
   type: zip
   files:
     - template.yml
-secondary-artifacts:
-      files:
-        - lambda2507 
-        - lambda2507
-      name:
     - lambdacd.yml
