@@ -17,6 +17,10 @@ artifacts:
   files:
     - template.yml
 secondary-artifacts:
-  type: zip
-  files:
+    artifactIdentifier:lambdacd
+      files:
+        - lambda2507 
+        - lambda2507
+      name: lambdacd
+      discard-paths: yes
     - lambdacd.yml
