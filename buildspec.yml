@@ -20,5 +20,5 @@ secondary-artifacts:
       files:
         - lambda2507 
         - lambda2507
-      name: lambdacd
+      name:
     - lambdacd.yml
