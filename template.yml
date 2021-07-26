@@ -1,12 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS:Serverless-2016-10-31
 service: AWS::Serverless::Function
-
 provider:
   name: aws
   stage: dev
   region: ap-south-1
   memorySize: 512
   Timeout: 30
-  CodeUri: s3://lambda2507
+  CodeUri: ./
   Runtime: nodejs10.x
   Policies:
         # Give Lambda basic execution Permission to the scheduledEventLogger
