@@ -1,0 +1,31 @@
+# This is the SAM template for deploying the lambdas.
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: SAM Template for deploying all lambdas
+Parameters: 
+  Author:
+    Type: String
+    Description: Author of this Lambda.
+  LambdaRoleArn:
+    Type: String
+    Description: Lambda role ARN to be used for all lambdas
+  StateMachineARN:
+    Type: String
+    Description: Lambda role ARN to be used for all lambdas
+Resources:
+  UploadToS3Lambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs6.10
+      CodeUri: ../../lambdas/fetch-s3-data/fetch-s3-data.zip
+      Role: !Ref LambdaRoleArn
+      FunctionName: fetch-s3-data
+      Timeout: 120
+      MemorySize: 128
+      Environment:
+        Variables:
+          Author: !Ref Author
+      Tags:
+        project: aws-serverless-demo
+        type: lambda
