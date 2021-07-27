@@ -3,13 +3,10 @@ AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: SAM Template for deploying all lambdas
 Parameters: 
-  Author:
+  Author:athakur
     Type: String
     Description: Author of this Lambda.
-  LambdaRoleArn:
-    Type: String
-    Description: Lambda role ARN to be used for all lambdas
-  StateMachineARN:
+  LambdaRoleArn: arn:aws:iam::237313376626:role/cloudformationrole
     Type: String
     Description: Lambda role ARN to be used for all lambdas
 Resources:
