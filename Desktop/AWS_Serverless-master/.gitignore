@@ -1,0 +1,12 @@
+.vscode
+.coverage
+.nyc_output
+npm-debug.log
+node_modules
+*.zip
+*coverage
+*test.bat*
+.npm
+.config
+package-lock.json
+*.log
