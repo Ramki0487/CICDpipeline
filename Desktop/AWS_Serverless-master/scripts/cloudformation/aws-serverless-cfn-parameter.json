@@ -1,6 +1,0 @@
-{
-  "Parameters": {
-    "Author": "athakur",
-    "LambdaRoleArn": "arn:aws:iam::237313376626:role/cloudformationrole",
-  }
-}
