@@ -3,7 +3,7 @@ AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: SAM Template for deploying all lambdas
 Parameters: 
-  Author:athakur
+  Author: athakur
     Type: String
     Description: Author of this Lambda.
   LambdaRoleArn: arn:aws:iam::237313376626:role/cloudformationrole
@@ -19,7 +19,7 @@ Resources:
       Role: arn:aws:iam::237313376626:role/cloudformationrole
       FunctionName: fetch-s3-data
       Timeout: 120
-      MemorySize: 128
+      MemorySize: 500
       Environment:
         Variables:
           Author: athakur
