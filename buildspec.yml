@@ -14,7 +14,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - cd $HOME_DIR/scripts/cloudformation/
-      - aws cloudformation package --debug --template-file samTemplate.yaml --s3-bucket aws-serverless-builds --output-template-file aws-serverless-cfn-template.yaml
+      - aws cloudformation package --debug --template-file samTemplate.yaml --s3-bucket aws-serverless-builds2707 --output-template-file aws-serverless-cfn-template.yaml
 cache:
   paths:
     - '/root/.npm/**/*'
