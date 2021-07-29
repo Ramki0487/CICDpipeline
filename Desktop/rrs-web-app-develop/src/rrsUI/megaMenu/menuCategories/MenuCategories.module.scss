@@ -1,0 +1,33 @@
+@import "@Assets/styles/Colors.scss";
+
+.header {
+  border-bottom: 2px solid $RR-SkyBlue;
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+  font-style: italic;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.items {
+  max-height: 550px;
+  line-height: 1.1;
+
+  h5 {
+    margin-bottom: 8px;
+  }
+
+  &-category {
+    margin-right: 20px;
+    margin-bottom: 10px;
+
+    &-link {
+      margin-bottom: 5px;
+    }
+  }
+
+  a {
+    color: $asphalt;
+    font-size: 14px;
+  }
+}

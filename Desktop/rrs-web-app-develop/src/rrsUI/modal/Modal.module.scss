@@ -1,0 +1,44 @@
+@import '@Assets/styles/Variables.scss';
+@import '@Assets/styles/Colors.scss';
+@import '@Assets/styles/Mixins.scss';
+
+.rrs-modal {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: $zindex-modal;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: $overlay-dark;
+  width: 100%;
+
+  @include media-break-point-down(sm) {
+    padding: 20px;
+  }
+
+  &-overlay {
+    outline: none;
+    color: $montana;
+    padding: 10px;
+    letter-spacing: 0.5px;
+    background: $white;
+    box-shadow: 0 2px 6px 0 $black;
+    border-radius: 3px;
+
+    &-content {
+      background-color: $white;
+      width: 100%;
+    }
+  }
+
+  &.active {
+    display: flex;
+  }
+
+  &.inactive {
+    display: none;
+  }
+}

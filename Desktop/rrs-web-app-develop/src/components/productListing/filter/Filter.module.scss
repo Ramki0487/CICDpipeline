@@ -1,0 +1,74 @@
+@import '@Assets/styles/Colors.scss';
+
+.filter {
+  &-button {
+    text-transform: uppercase;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    max-width: 350px;
+    margin-bottom: 15px;
+
+    svg {
+      margin-right: 8px;
+      display: inline-block;
+    }
+  }
+
+  &-modal {
+    width: 100%;
+
+    &-header {
+      padding: 15px;
+      background: $RR-SkyBlue;
+      text-transform: uppercase;
+    }
+
+    &-footer {
+      left: 0;
+      bottom: 0;
+      position: absolute;
+      text-align: center;
+      box-shadow: 0 -8px 8px $shadow-dark;
+      background: $white;
+
+      &-btn {
+        &-show,
+        &-clear {
+          padding: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+
+        &-show {
+          background: $RR-Navy;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &-top-section {
+    border-bottom: 1px solid $warm-medium-gray;
+    padding-bottom: 10px;
+  }
+
+  &-storepicker,
+  &-myfit {
+    padding: 15px 10px;
+    margin-top: 7px;
+    background-color: $natural;
+  }
+
+  &-mobile {
+    padding: 10px;
+    max-height: 90vh;
+    overflow-y: auto;
+
+    .filter-options {
+      margin-bottom: 200px;
+    }
+  }
+}

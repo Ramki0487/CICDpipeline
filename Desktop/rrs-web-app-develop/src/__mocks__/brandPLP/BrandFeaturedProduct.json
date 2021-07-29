@@ -1,0 +1,38 @@
+{
+  "brandFeaturedProduct": {
+    "title": "MEN'S BROOKS GLYCERIN 19",
+    "subtext": "Short description Or intro lorem ipsum...",
+    "shopNowUrl": "Shop Now",
+    "subTitle": "Featured Product",
+    "image": {
+      "sys": {
+        "id": "43vqsKh9iXbtJbBwWWbq6G"
+      },
+      "fields": {
+        "title": "Brand Featured Product1",
+        "image": {
+          "sys": {
+            "id": "3YwZQTo6b0cfmiS2iVP0kr"
+          },
+          "fields": {
+            "title": "Image for Brand Featured Product1",
+            "description": "Image for Brand Featured Product1",
+            "file": {
+              "url": "//images.ctfassets.net/xanbi6q061ft/3YwZQTo6b0cfmiS2iVP0kr/2948c7ff77fea5b9549e775c7127a4dd/36784-001_2x.png",
+              "details": {
+                "size": 402217,
+                "image": {
+                  "width": 796,
+                  "height": 796
+                }
+              },
+              "fileName": "36784-001@2x.png",
+              "contentType": "image/png"
+            }
+          }
+        }
+      }
+    },
+    "productImagePosition": "Right"
+  }
+}

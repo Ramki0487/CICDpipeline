@@ -1,0 +1,95 @@
+[
+  {
+    "id": "OrderDate",
+    "title": "Order Date",
+    "radioLabel": [
+      {
+        "id": "Past3months",
+        "value": "Past 3 months",
+        "label": "Past 3 months"
+      },
+      {
+        "id": "Past6months",
+        "value": "Past 6 months",
+        "label": "Past 6 months"
+      },
+      {
+        "id": "Past12months",
+        "value": "Past 12 months",
+        "label": "Past 12 months"
+      },
+      {
+        "id": "year2021",
+        "value": "2021",
+        "label": "2021"
+      },
+      {
+        "id": "year2020",
+        "value": "2020",
+        "label": "2020"
+      },
+      {
+        "id": "year2019",
+        "value": "2019",
+        "label": "2019"
+      }
+    ]
+  },
+  {
+    "id": "OrderStatus",
+    "title": "Order Status",
+    "radioLabel": [
+      {
+        "id": "all",
+        "value": "All",
+        "label": "All"
+      },
+      {
+        "id": "submitted",
+        "value": "Submitted",
+        "label": "Submitted"
+      },
+      {
+        "id": "pending",
+        "value": "Pending",
+        "label": "Pending"
+      },
+      {
+        "id": "cancelled",
+        "value": "Cancelled",
+        "label": "Cancelled"
+      },
+      {
+        "id": "completed",
+        "value": "Completed",
+        "label": "Completed"
+      }
+    ]
+  },
+  {
+    "id": "OrderType",
+    "title": "Order Type",
+    "radioLabel": [
+      {
+        "id": "all",
+        "value": "All",
+        "label": "All"
+      },
+      {
+        "id": "internet",
+        "value": "Internet",
+        "label": "Internet"
+      },
+      {
+        "id": "retail",
+        "value": "Retail",
+        "label": "Retail"
+      },
+      {
+        "id": "phone",
+        "value": "Phone",
+        "label": "Phone"
+      }
+    ]
+  }
+]

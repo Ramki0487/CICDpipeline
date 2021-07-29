@@ -1,0 +1,45 @@
+{
+  "brandNewProduct": {
+    "title": "NEW FROM BROOKS",
+    "promotions": [
+      {
+        "sys": {
+          "id": "2GXu1KZKXuskpoeISHGCsX"
+        },
+        "fields": {
+          "title": "Product Name Lorem Ipsum Dolor Sit",
+          "image": {
+            "sys": {
+              "id": "5ACDPlw0ZkDjgVT8SGaRXm"
+            },
+            "fields": {
+              "title": "Brand New Product1",
+              "image": {
+                "sys": {
+                  "id": "6F5qr5UqUrJD931fkeXcn3"
+                },
+                "fields": {
+                  "title": "Image for Brand New Product1",
+                  "description": "Image for Brand New Product1",
+                  "file": {
+                    "url": "//images.ctfassets.net/xanbi6q061ft/6F5qr5UqUrJD931fkeXcn3/a84c15f97e4ad98a9922e702cf8456e8/Group_632-4_2x.png",
+                    "details": {
+                      "size": 176473,
+                      "image": {
+                        "width": 520,
+                        "height": 520
+                      }
+                    },
+                    "fileName": "Group 632-4@2x.png",
+                    "contentType": "image/png"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "shopAllNewArrivalUrl": "Shop All New Arrivals"
+  }
+}

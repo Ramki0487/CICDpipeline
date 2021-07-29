@@ -1,0 +1,41 @@
+@import '@Assets/styles/Colors.scss';
+@import '@Assets/styles/Mixins.scss';
+
+.brand-product {
+  &-container {
+    margin-top: 40px;
+  }
+
+  &-content {
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    @include media-break-point-up(sm) {
+      justify-content: unset;
+    }
+  }
+
+  &-title {
+    max-width: 130px;
+
+    @include media-break-point-up(sm) {
+      max-width: unset;
+    }
+  }
+
+  &-button {
+    width: unset;
+
+    @include media-break-point-up(sm) {
+      width: 244px;
+      margin-left: 20px;
+      display: unset;
+    }
+  }
+
+  &-slider {
+    @include media-break-point-up(sm) {
+      width: 330px;
+    }
+  }
+}

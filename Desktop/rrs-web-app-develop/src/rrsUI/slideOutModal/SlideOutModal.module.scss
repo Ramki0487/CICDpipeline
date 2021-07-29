@@ -1,0 +1,84 @@
+@import '@Assets/styles/Variables.scss';
+@import '@Assets/styles/Colors.scss';
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .drawer {
+    transition: none;
+  }
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: -200vw;
+  right: 0;
+  bottom: 0;
+  z-index: $zindex-fixed;
+  transition: left 0.4s linear 0.3s;
+  visibility: hidden;
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    &-open {
+      transition: none;
+    }
+
+    &-overlay {
+      transition: none;
+    }
+
+    &-closebtn {
+      transition: none;
+    }
+  }
+
+  &-open {
+    left: 0;
+    transition: left 0.4s linear;
+    visibility: visible;
+  }
+
+  &-content {
+    background: $white;
+    height: 100%;
+    width: 85vw;
+    max-width: 400px;
+    z-index: $zindex-popover;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-overlay {
+    background-color: $overlay-dark;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $zindex-overlay;
+    visibility: hidden;
+    transition: visibility 0.3s linear;
+
+    @media screen and (prefers-reduced-motion: reduce) {
+      &-open {
+        transition: none;
+      }
+    }
+
+    &-open {
+      visibility: visible;
+      transition: visibility 0.5s linear 0.2s;
+    }
+  }
+
+  &-closebtn {
+    position: absolute;
+    right: 0;
+    z-index: $zindex-popover;
+    top: 0;
+    margin: 10px;
+
+    path {
+      stroke: $white;
+    }
+  }
+}

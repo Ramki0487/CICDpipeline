@@ -1,0 +1,25 @@
+
+@import '@Assets/styles/Colors.scss';
+
+.html-content {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+
+    td,
+    th {
+      border: 1px solid $black;
+      padding: 8px;
+    }
+  }
+
+  table > th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

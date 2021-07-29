@@ -1,0 +1,5 @@
+@import '@Assets/styles/Colors.scss';
+
+.error > div {
+  border-color: $error-rust;
+}

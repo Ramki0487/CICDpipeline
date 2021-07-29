@@ -1,0 +1,21 @@
+@import '@Assets/styles/Colors.scss';
+@import '@Assets/styles/Mixins.scss';
+
+.account {
+  padding-top: 30px;
+  margin-bottom: 50px;
+
+  @include media-break-point-down(lg) {
+    padding-top: 0;
+  }
+
+  &-menu {
+    @include media-break-point-up(lg) {
+      max-width: 230px;
+    }
+  }
+
+  &-title {
+    padding-bottom: 30px;
+  }
+}

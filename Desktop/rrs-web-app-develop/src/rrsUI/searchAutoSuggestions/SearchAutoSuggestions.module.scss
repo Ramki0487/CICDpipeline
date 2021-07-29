@@ -1,0 +1,129 @@
+@import '@Assets/styles/Variables.scss';
+@import '@Assets/styles/Colors.scss';
+@import '@Assets/styles/Mixins.scss';
+
+.searchbox {
+  position: relative;
+
+  &-input {
+    position: relative;
+
+    &-clear {
+      display: none;
+      position: absolute;
+      right: 45px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  &-suggestions {
+    display: none;
+    position: absolute;
+    background: $white;
+    left: 0;
+    right: 0;
+    top: 0;
+    min-height: 300px;
+    z-index: $zindex-modal;
+    box-shadow: 0 3px 10px $shadow-dark;
+
+    @include media-break-point-up(lg) {
+      min-width: 650px;
+    }
+
+    &-links {
+      padding: 10px 10px 10px 30px;
+
+      li {
+        margin: 8px 0;
+      }
+    }
+
+    &-results {
+      padding: 10px;
+
+      @include media-break-point-down(sm) {
+        border-top: 2px solid $warm-medium-gray;
+      }
+
+      &-title {
+        margin: 10px 0;
+
+        @include media-break-point-down(sm) {
+          text-align: center;
+        }
+      }
+
+      &-item {
+        font-size: 14px;
+        padding: 5px;
+      }
+    }
+
+    &-see-all {
+      margin: 20px 0;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    &-empty {
+      margin-top: 30px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  &-focused {
+    input {
+      padding: 8px 10px;
+    }
+
+    .searchbox-input-clear {
+      display: block;
+    }
+
+    .searchbox-input-text {
+      padding: 0 40px 0 0;
+    }
+
+    .searchbox-suggestions {
+      display: flex;
+    }
+  }
+
+  &-auto-complete {
+    position: relative;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .overlay {
+    transition: none;
+  }
+}
+
+.overlay {
+  background-color: $overlay-dark;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: $zindex-overlay;
+  visibility: hidden;
+  transition: visibility 0.2s linear;
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    &-active {
+      transition: none;
+    }
+  }
+
+  &-active {
+    visibility: visible;
+    transition: visibility 0.5s linear;
+  }
+}

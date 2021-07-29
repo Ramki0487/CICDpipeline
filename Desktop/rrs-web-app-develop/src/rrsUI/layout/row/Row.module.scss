@@ -1,0 +1,89 @@
+
+@import "@Assets/styles/Mixins";
+
+$OPTIONS_JUSTIFY: "flex-start", "flex-end", "center", "space-between", "space-around", "space-evenly";
+$OPTIONS_ALIGN_ITEMS: "initial", "flex-start", "flex-end", "center", "baseline", "stretch";
+$OPTIONS_ALIGN_SELF: "initial", "flex-start", "flex-end", "center", "baseline", "stretch";
+$OPTIONS_ALIGN_CONTENT: "initial", "flex-start", "flex-end", "center", "space-between", "space-around", "stretch";
+$OPTIONS_FLEX_WRAP: "nowrap", "wrap", "wrap-reverse";
+$OPTIONS_DIRECTION: "row", "row-reverse", "column", "column-reverse";
+$TEXT_ALIGN_OPTIONS: left, center, right;
+$GAP_OPTIONS: 3, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50;
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+// Generate justify content rules for flex container
+@each $var in $OPTIONS_JUSTIFY {
+  .justify-#{$var} {
+    justify-content: #{$var};
+  }
+}
+
+// Generate align items rules for flex container
+@each $var in $OPTIONS_ALIGN_ITEMS {
+  .align-items-#{$var} {
+    align-items: #{$var};
+  }
+}
+
+// Generate align self rules for flex container
+@each $var in $OPTIONS_ALIGN_SELF {
+  .align-self-#{$var} {
+    align-self: #{$var};
+  }
+}
+
+// Generate align content rules for flex container
+@each $var in $OPTIONS_ALIGN_CONTENT {
+  .align-content-#{$var} {
+    align-content: #{$var};
+  }
+}
+
+// Generate flex wrap rules for flex container
+@each $var in $OPTIONS_FLEX_WRAP {
+  .flex-wrap-#{$var} {
+    flex-wrap: #{$var};
+  }
+}
+
+// Generate flex direction rules for flex container
+@each $var in $OPTIONS_DIRECTION {
+  .direction-#{$var} {
+    flex-direction: #{$var};
+  }
+}
+
+@each $px in $GAP_OPTIONS {
+  .row-gap-#{$px} {
+    row-gap: #{$px}px;
+  }
+
+  .column-gap-#{$px} {
+    column-gap: #{$px}px;
+  }
+
+  .column-gutter-#{$px} {
+    $gap: $px/2;
+
+    margin-left: -#{$gap}px;
+    margin-right: -#{$gap}px;
+    width: auto;
+    min-width: 100%;
+
+    > div {
+      padding-left: #{$gap}px;
+      padding-right: #{$gap}px;
+    }
+  }
+}
+
+@each $var in $TEXT_ALIGN_OPTIONS {
+  .text-align-#{$var} {
+    text-align: $var;
+  }
+}

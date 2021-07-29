@@ -1,0 +1,48 @@
+{
+  "orderSummary": {
+    "itemsTotal": {
+      "amount": 129.99,
+      "symbol": "$ ",
+      "type": "SUBTOTAL",
+      "label": "Cart Subtotal"
+    },
+    "giftWrap": {
+      "amount": 0.0,
+      "symbol": "$ ",
+      "type": "GIFTWRAP",
+      "label": "Gift Wrap:"
+    },
+    "membershipSavings": {
+      "amount": -91.5,
+      "symbol": "$ ",
+      "type": "DISCOUNT",
+      "label": "VIP Savings:"
+    },
+    "promotionSavings": {
+      "amount": -91.46,
+      "symbol": "$",
+      "type": "DISCOUNT",
+      "label": "Promotion Applied:",
+      "offerCode": "C1Z2Y207",
+      "showPromoInfo": true
+    },
+    "tax": {
+      "amount": -91.46,
+      "symbol": "$ ",
+      "label": "Tax",
+      "type": "TAX"
+    },
+    "shipping": {
+      "amount": 0.0,
+      "symbol": "$",
+      "label": "Shipping",
+      "type": "SHIPPING"
+    },
+    "estimatedTotals": {
+      "amount": 758.78,
+      "symbol": "$",
+      "type": "TOTAL",
+      "label": "EstimatedTotal:"
+    }
+  }
+}

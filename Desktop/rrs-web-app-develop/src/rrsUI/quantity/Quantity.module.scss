@@ -1,0 +1,25 @@
+@import '@Assets/styles/Colors.scss';
+
+.quantity {
+  max-width: 150px;
+
+  &-increaseBtn,
+  &-decreaseBtn {
+    cursor: pointer;
+    font-size: 24px;
+    color: $black;
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+  }
+
+  &-val {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}

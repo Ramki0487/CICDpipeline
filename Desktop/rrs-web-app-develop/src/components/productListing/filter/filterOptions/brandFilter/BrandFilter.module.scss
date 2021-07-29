@@ -1,0 +1,21 @@
+@import '@Assets/styles/Colors.scss';
+
+.brand {
+  &-search {
+    margin: 10px 0;
+
+    &-box {
+      border: 2px solid $very-light-gray;
+    }
+  }
+
+  &-checkbox span {
+    color: $asphalt;
+  }
+
+  &-see-all-link {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+}

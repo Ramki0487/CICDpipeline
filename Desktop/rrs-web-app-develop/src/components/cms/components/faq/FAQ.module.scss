@@ -1,0 +1,16 @@
+@import '@Assets/styles/Colors.scss';
+@import '@Assets/styles/Mixins.scss';
+
+.faq {
+  &-container {
+    margin: 50px auto;
+
+    @include media-break-point-down(md) {
+      margin: 20px auto;
+    }
+  }
+
+  &-head {
+    align-items: center;
+  }
+}

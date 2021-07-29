@@ -1,0 +1,31 @@
+@import '@Assets/styles/Colors.scss';
+
+.colors {
+  &-item {
+    max-width: 170px;
+
+    &-code {
+      min-width: 150px;
+
+      span {
+        margin-top: 0;
+        color: $asphalt;
+        text-transform: capitalize;
+      }
+    }
+
+    &-white {
+      span:first-of-type {
+        border: 1px solid $asphalt;
+      }
+    }
+
+    &-multi {
+      span:first-of-type {
+        background-image: url('../../../../../assets/images/color-wheel.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

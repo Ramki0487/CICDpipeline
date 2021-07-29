@@ -1,0 +1,19 @@
+@import '@Assets/styles/Colors.scss';
+@import '@Assets/styles/Mixins.scss';
+
+.order-summary {
+  background-color: $warm-light-gray;
+  padding: 10px;
+
+  @include media-break-point-up(md) {
+    padding: 20px;
+  }
+
+  &-vip {
+    color: $vip-red;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}

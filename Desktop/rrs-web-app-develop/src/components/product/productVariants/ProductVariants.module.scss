@@ -1,0 +1,97 @@
+@import '@Assets/styles/Colors.scss';
+@import '@Assets/styles/Mixins.scss';
+@import '@Assets/styles/KeyFrames.scss';
+
+.variant {
+  &-title {
+    color: $asphalt;
+  }
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    &-error {
+      animation: none;
+    }
+  }
+
+  &-error {
+    color: $error-rust;
+    width: 100%;
+
+    @include error-msg-styles();
+  }
+
+  &-button {
+    width: auto;
+    min-width: 56px;
+    justify-content: center;
+    border: 1px solid $warm-medium-gray;
+
+    @include media-break-point-up(md) {
+      min-width: 70px;
+    }
+
+    &-disabled {
+      background: $warm-light-gray;
+      border: 1px solid $very-light-gray;
+      pointer-events: none;
+      cursor: not-allowed;
+      opacity: 0.7;
+
+      label > span {
+        color: $warm-gray;
+        text-decoration: line-through;
+
+        &::before,
+        &::after {
+          content: "\00a0";
+
+          @include media-break-point-up(lg) {
+            content: "\00a0\00a0";
+          }
+        }
+      }
+    }
+  }
+}
+
+span.variant-color {
+  width: 65px;
+  height: 65px;
+
+  img {
+    padding: 0;
+    width: 100%;
+  }
+
+  &-disabled {
+    background-color: $warm-light-gray;
+    pointer-events: none;
+    cursor: not-allowed;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 90px;
+      height: 1px;
+      background: $warm-gray;
+      position: absolute;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.size-chart {
+  color: $asphalt;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .isLoading {
+    animation: none;
+  }
+}
+
+.isLoading {
+  opacity: 0.1;
+  animation: loadingAnimationOpacity 1s infinite;
+  pointer-events: none;
+}

@@ -1,0 +1,16 @@
+@import '@Assets/styles/Mixins.scss';
+
+.brand-promotion {
+  margin-bottom: 40px;
+  margin-top: 10px;
+
+  @include media-break-point-up(sm) {
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+
+  &-heading {
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+}

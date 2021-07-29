@@ -1,0 +1,18 @@
+@import "@Assets/styles/Colors.scss";
+
+.dropdown {
+  &-item {
+    cursor: pointer;
+    padding: 5px 10px;
+    color: $asphalt;
+
+    &:hover,
+    &:focus {
+      background-color: $warm-light-gray;
+    }
+
+    &-active {
+      background-color: $very-light-gray;
+    }
+  }
+}

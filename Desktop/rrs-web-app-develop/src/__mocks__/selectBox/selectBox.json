@@ -1,0 +1,39 @@
+{
+  "options": [
+    {
+      "label": "Popularity",
+      "value": "s=0&scri=207",
+      "isSelected": true
+    },
+    {
+      "label": "Price: Low to High",
+      "value": "s=5&scri=207",
+      "isSelected": false
+    },
+    {
+      "label": "Price: High to Low",
+      "value": "s=6&scri=207",
+      "isSelected": false
+    },
+    {
+      "label": "Top Rated",
+      "value": "s=3&scri=207",
+      "isSelected": false
+    },
+    {
+      "label": "Best Sellers",
+      "value": "s=4&scri=207",
+      "isSelected": false
+    },
+    {
+      "label": "SALE",
+      "value": "s=7&scri=207",
+      "isSelected": false
+    },
+    {
+      "label": "What's New",
+      "value": "s=8&scri=207",
+      "isSelected": false
+    }
+  ]
+}
